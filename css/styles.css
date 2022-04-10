@@ -159,6 +159,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     margin-left: auto;
+    align-items: center;
 }
 
 .auth-nav>.iteam:first-child {
@@ -172,6 +173,13 @@ img {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
+}
+
+.icon-head {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 10px 0 0;
 }
 
 
@@ -246,6 +254,14 @@ img {
     letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.adv-icon {
+    padding: 0;
+    margin: 0 0 30px 0;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
 }
 
 
