@@ -167,19 +167,28 @@ img {
 }
 
 .auth-nav .link {
+    display: flex;
     color: var(--text-primary-color);
+    fill: var(--text-primary-color);
 }
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
+
+
+/* .iteam {
+    display: flex;
+} */
 
 .icon-head {
     width: 16px;
     height: 16px;
     padding: 0;
     margin: 0 10px 0 0;
+    align-items: center;
 }
 
 
@@ -188,8 +197,13 @@ img {
 .hero {
     padding: 200px 0;
     text-align: center;
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url(../img/Img-hero.jpg);
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img-hero.jpg);
+    background-position: center;
 }
 
 .hero .hero-title {
@@ -258,11 +272,20 @@ img {
 }
 
 .adv-icon {
+    display: flex;
     padding: 0;
     margin: 0 0 30px 0;
-    width: 270px;
     height: 120px;
     background-color: #F5F4FA;
+    justify-content: center;
+    align-items: center
+}
+
+.adv-svg {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -294,6 +317,7 @@ img {
 .team-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
 }
 
 .team-item:not(:last-child) {
@@ -301,7 +325,6 @@ img {
 }
 
 .team-desc {
-    background: #FFFFFF;
     padding: 30px 0;
     text-align: center;
 }
@@ -322,6 +345,71 @@ img {
     letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.team-icon {
+    margin: 0;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+}
+
+.team-icon:hover,
+.team-icon:focus,
+.team-icon:active {
+    border-radius: 50%;
+    background: var(--batton-primary-color);
+    fill: #FFFFFF;
+}
+
+.team-svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Company */
+
+.company-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.company-item {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.company-item:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.company-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 
@@ -384,11 +472,21 @@ img {
     padding-bottom: 60px;
 }
 
-.footer .logo.link {
+
+/* Cont-footer */
+
+.cont-footer {
+    display: flex;
+}
+
+
+/* footer-address */
+
+.footer-address .logo.link {
     color: var(--white-color);
 }
 
-.footer .link {
+.footer-address .link {
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -414,6 +512,61 @@ img {
 .footer .link:hover,
 .footer .link:focus {
     color: var(--accent-color);
+}
+
+
+/* Join */
+
+.join {
+    margin-top: 12px;
+    margin-left: 70px;
+}
+
+.join-title {
+    position: absolute;
+    width: 144px;
+    height: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.join-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.join-icon {
+    margin: 20px 0 0 0;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #FFFFFF;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.join-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.join-icon:hover,
+.join-icon:focus,
+.join-icon:active {
+    border-radius: 50%;
+    background: var(--batton-primary-color);
+}
+
+.join-svg {
+    width: 20px;
+    height: 20px;
 }
 
 
