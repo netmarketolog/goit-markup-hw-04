@@ -104,11 +104,14 @@ img {
 
 .page-header {
     border-bottom: 1px solid #ECECEC;
+    background: #FFFFFF;
+    /* position: fixed; */
 }
 
 .container.page-header {
     display: flex;
     align-items: center;
+    border-bottom: none;
 }
 
 
@@ -609,8 +612,12 @@ img {
     margin-bottom: 30px;
 }
 
-.gallery .iteam:hover,
-.gallery .iteam:focus {
+.gallery .link {
+    display: block;
+}
+
+.gallery .link:hover,
+.gallery .link:focus {
     cursor: pointer;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
