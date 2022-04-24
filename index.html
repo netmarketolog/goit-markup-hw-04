@@ -24,7 +24,7 @@
 
     <!-- Menu-->
     <header class="page-header">
-        <div class="container page-header">
+        <div class="container menu">
             <nav class="nav-flex">
                 <a href="./index.html" class="logo link"><span class="blue-logo">Web</span>Studio</a>
                 <ul class="site-nav ">
@@ -62,7 +62,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button primary">Заказать услугу</button>
+                <button data-modal-open type="button" class="button primary">Заказать услугу</button>
             </div>
         </section>
 
@@ -101,9 +101,24 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="doing">
-                    <li class="doing-item"><img src="./img/box2.jpg" alt="Софт для телефонов" width="370"></li>
-                    <li class="doing-item"><img src="./img/box3.jpg" alt="Планшеты" width="370"></li>
-                    <li class="doing-item"><img src="./img/box1.jpg" alt="Алгоритм" width="370"></li>
+                    <li class="doing-item">
+                        <img src="./img/box1.jpg" alt="Софт для телефонов" width="370">
+                        <div class="doing-thumb">
+                            <h3 class="text-doning">Десктопные приложения</h3>
+                        </div>
+                    </li>
+                    <li class="doing-item">
+                        <img src="./img/box2.jpg" alt="Планшеты" width="370">
+                        <div class="doing-thumb">
+                            <h3 class="text-doning">Мобильные приложения</h3>
+                        </div>
+                    </li>
+                    <li class="doing-item">
+                        <img src="./img/box3.jpg" alt="Алгоритм" width="370">
+                        <div class="doing-thumb">
+                            <h3 class="text-doning">Дизайнерские решения</h3>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -321,6 +336,22 @@
             </div>
 
         </div>
+
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="esc">
+                <svg class="ecs-svg">
+                    <use href="./img/symbol-defs1.svg#esc" ></use>
+                </svg>
+
+            </button>
+        </div>
+
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+</body>
 
 </html>
